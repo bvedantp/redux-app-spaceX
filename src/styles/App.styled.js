@@ -8,6 +8,11 @@ export const Header = styled.header`
     justify-content: center;
     background-color: #1B2025;
     top: 0;
+
+    img {
+        width: 200px;
+        height: 50px;
+    }
 `
 
 export const Hero = styled.main`

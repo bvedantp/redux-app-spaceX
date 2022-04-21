@@ -1,8 +1,21 @@
 import styled from "styled-components";
 
 export const LaunchLine = styled.tr`
-        transition: transform 200ms ease-in ;
+        transition: all 200ms ease-in ;
 
+        &:hover {
+            cursor: pointer;
+            background-color: #FFD42F;
+
+            em {
+                    border: 2px solid #1B2025;
+                }
+
+                b {
+                    border: 2px solid #1B2025;
+                }
+        }
+/* 
         &:hover {
                 cursor: pointer;
                 background-color: #FFD42F;
@@ -17,7 +30,7 @@ export const LaunchLine = styled.tr`
                 b {
                     border: 2px solid #1B2025;
                 }
-        }
+        } */
 
         b {
             font-weight: 100;

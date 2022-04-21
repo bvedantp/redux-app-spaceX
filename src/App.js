@@ -4,6 +4,7 @@ import { updateByQuery } from './features/counter/counterSlice';
 import ShowLaunches from './features/launches/ShowLaunches';
 import Selector from './features/launches/Selector';
 import { Header, Hero } from './styles/App.styled';
+import ImgSpace from './spaceX.png';
 import GlobalStyles from './styles/Global'
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
     <div>
       <GlobalStyles />
       <Header>
-        <h1>SpaceX</h1>
+        <img src={ImgSpace} alt='mainLogo' />
         <Selector />
       </Header>
       <Hero>

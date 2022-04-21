@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     img {
-        max-width: 200px;
+        max-width: 400px;
     }
 `
 
