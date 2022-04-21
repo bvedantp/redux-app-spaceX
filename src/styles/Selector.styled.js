@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const SelectorDiv = styled.div`
+    z-index: 4;
     display: flex;
     padding: 8px;
     gap: 8px;

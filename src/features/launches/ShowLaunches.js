@@ -29,7 +29,7 @@ export default function ShowLaunches(props) {
             <td>{props.flightNo} </td>
             <td>{props.mission} </td>
             <td>{ date.toDateString() } </td>
-            <td>{props.status} </td>
+            <td>{props.status ? <em>Successful</em> : <b>Failed</b>} </td>
             {isClicked && <DetailsModal state={currRocket} />}
         </LaunchLine>
     )

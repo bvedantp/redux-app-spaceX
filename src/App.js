@@ -33,7 +33,7 @@ function App() {
           </thead>
           <tbody>
             {Array.isArray(centralState) && centralState.map((item) => {
-              return <ShowLaunches key={item.id} id={item.id} flightNo={item.flight_number}  mission={item.name} status={item.success ? "successful" : "failed"} launchDate={item.date_utc} />
+              return <ShowLaunches key={item.id} id={item.id} flightNo={item.flight_number}  mission={item.name} status={item.success} launchDate={item.date_utc} />
             })}            
           </tbody>
         </table>
