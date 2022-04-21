@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/redux-app-spaceX/static/js/main.c9f263bd.js",
+    "index.html": "/redux-app-spaceX/index.html",
+    "main.c9f263bd.js.map": "/redux-app-spaceX/static/js/main.c9f263bd.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c9f263bd.js"
+  ]
+}
