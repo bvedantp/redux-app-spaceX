@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import DetailsModal from "./DetailsModal";
+import { LaunchLine } from "../../styles/ShowLaunches.styled";
 
 export default function ShowLaunches(props) {
     const centralState = useSelector(state => state.counter.value)
@@ -24,12 +25,12 @@ export default function ShowLaunches(props) {
     const date = new Date(`${props.launchDate}`)
 
     return(
-        <div onClick={updateClickState} >
-            <p>{props.flightNo} </p>
-            <p>{props.mission} </p>
-            <p>{ date.toDateString() } </p>
-            <p>{props.status} </p>
+        <LaunchLine onClick={updateClickState} >
+            <td>{props.flightNo} </td>
+            <td>{props.mission} </td>
+            <td>{ date.toDateString() } </td>
+            <td>{props.status} </td>
             {isClicked && <DetailsModal state={currRocket} />}
-        </div>
+        </LaunchLine>
     )
 }
